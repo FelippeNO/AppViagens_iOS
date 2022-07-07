@@ -9,15 +9,22 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    //MARK: - IBOutlets
+    
     @IBOutlet weak var tripsTableView: UITableView!
+    
+    //MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tripsTableView.dataSource = self
         tripsTableView.delegate = self
+        view.backgroundColor = UIColor(red: 30.0/255.0, green: 59/255.0, blue: 119/255.0, alpha: 1)
     }
     
 }
+
+//MARK: - Extensions
 
 extension ViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

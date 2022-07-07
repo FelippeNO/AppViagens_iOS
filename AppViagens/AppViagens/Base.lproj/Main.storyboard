@@ -16,14 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IyK-gk-AI1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="IyK-gk-AI1">
                                 <rect key="frame" x="0.0" y="44" width="390" height="800"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IyK-gk-AI1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BET-gr-nT4"/>
+                            <constraint firstItem="IyK-gk-AI1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DaW-YE-kPk"/>
+                            <constraint firstItem="IyK-gk-AI1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ULw-Ir-8zE"/>
+                            <constraint firstAttribute="bottom" secondItem="IyK-gk-AI1" secondAttribute="bottom" id="oea-rD-OM3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="tripsTableView" destination="IyK-gk-AI1" id="vqz-id-LOJ"/>
