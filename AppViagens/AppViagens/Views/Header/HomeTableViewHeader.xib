@@ -14,25 +14,25 @@
             <rect key="frame" x="0.0" y="0.0" width="390" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cc-6s-hju" userLabel="BlueHeadContainer">
-                    <rect key="frame" x="0.0" y="96" width="390" height="190"/>
-                    <color key="backgroundColor" red="0.1176470588" green="0.23137254900000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="190" id="kDk-qf-Dsq"/>
-                    </constraints>
-                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GA-S0-TIg" userLabel="BottomWhiteMark">
-                    <rect key="frame" x="0.0" y="286" width="390" height="60"/>
+                    <rect key="frame" x="0.0" y="285.66666666666669" width="390" height="60.333333333333314"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cc-6s-hju" userLabel="BlueHeadContainer">
+                    <rect key="frame" x="0.0" y="95.666666666666686" width="390" height="240"/>
+                    <color key="backgroundColor" red="0.1176470588" green="0.23137254900000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="240" id="kDk-qf-Dsq"/>
+                    </constraints>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFE-Sl-Hu8" userLabel="RedContainer">
-                    <rect key="frame" x="20" y="184" width="350" height="122"/>
+                    <rect key="frame" x="20" y="193.66666666666663" width="350" height="152"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ferias" translatesAutoresizingMaskIntoConstraints="NO" id="mGB-pJ-byJ">
-                            <rect key="frame" x="175" y="0.0" width="175" height="122"/>
+                            <rect key="frame" x="175" y="0.0" width="175" height="152"/>
                         </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u7c-f6-hEp">
-                            <rect key="frame" x="0.0" y="0.0" width="175" height="123"/>
+                            <rect key="frame" x="0.0" y="0.0" width="175" height="152"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aproveite o verão, com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep1-li-LiC">
                                     <rect key="frame" x="16" y="13.999999999999996" width="143" height="61.666666666666657"/>
@@ -41,13 +41,13 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ofertas exclusivas, somente no nosso app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roP-r4-Stg">
-                                    <rect key="frame" x="16" y="61.333333333333343" width="143" height="47.666666666666657"/>
+                                    <rect key="frame" x="16" y="91.333333333333343" width="143" height="47.666666666666657"/>
                                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" systemColor="systemMintColor"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="roP-r4-Stg" secondAttribute="bottom" constant="12.999999999999432" id="1QZ-lp-mVk"/>
                                 <constraint firstAttribute="trailing" secondItem="roP-r4-Stg" secondAttribute="trailing" constant="16" id="RBl-nY-lLx"/>
@@ -82,20 +82,25 @@
             <constraints>
                 <constraint firstItem="8GA-S0-TIg" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="0Hq-Y6-7L7"/>
                 <constraint firstItem="WFE-Sl-Hu8" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="1Mt-cY-b8e"/>
-                <constraint firstItem="WFE-Sl-Hu8" firstAttribute="top" secondItem="dh6-U3-DQB" secondAttribute="bottom" constant="100" id="5Xz-dK-mkZ"/>
+                <constraint firstItem="WFE-Sl-Hu8" firstAttribute="top" secondItem="dh6-U3-DQB" secondAttribute="bottom" constant="110" id="5Xz-dK-mkZ"/>
                 <constraint firstAttribute="bottom" secondItem="8GA-S0-TIg" secondAttribute="bottom" constant="-46" id="7Ga-jr-GAJ"/>
-                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="WFE-Sl-Hu8" secondAttribute="bottom" constant="-20" id="AXg-90-E2F"/>
+                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="WFE-Sl-Hu8" secondAttribute="bottom" constant="-60" id="AXg-90-E2F"/>
                 <constraint firstItem="8GA-S0-TIg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FFu-Sv-Rjj"/>
                 <constraint firstItem="4cc-6s-hju" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IXH-UC-A7a"/>
                 <constraint firstItem="4cc-6s-hju" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Lln-qJ-k4M"/>
                 <constraint firstItem="dh6-U3-DQB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="PFk-qM-q1g"/>
                 <constraint firstItem="4cc-6s-hju" firstAttribute="top" secondItem="dh6-U3-DQB" secondAttribute="bottom" constant="12" id="WNR-A7-bPI"/>
-                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="4cc-6s-hju" secondAttribute="bottom" id="crk-sn-GLi"/>
+                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="4cc-6s-hju" secondAttribute="bottom" constant="-49.999999999999943" id="crk-sn-GLi"/>
                 <constraint firstItem="dh6-U3-DQB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="g9u-ob-qgB"/>
-                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="4cc-6s-hju" secondAttribute="bottom" id="vZI-Bn-4pL"/>
+                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="4cc-6s-hju" secondAttribute="bottom" constant="-49.999999999999943" id="vZI-Bn-4pL"/>
                 <constraint firstItem="WFE-Sl-Hu8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="yrC-ba-REp"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bannerView" destination="WFE-Sl-Hu8" id="GKl-vX-PEQ"/>
+                <outlet property="blueHeadContainer" destination="4cc-6s-hju" id="GEc-Wb-WdF"/>
+                <outlet property="bottomWhiteMarkView" destination="8GA-S0-TIg" id="soM-mi-qpc"/>
+            </connections>
             <point key="canvasLocation" x="135.38461538461539" y="-9848.8151658767765"/>
         </view>
     </objects>
@@ -103,6 +108,9 @@
         <image name="ferias" width="988" height="1364"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
