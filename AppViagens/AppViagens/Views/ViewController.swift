@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    let viagemTableViewCell = "ViagemTableViewCell"
+    
     //MARK: - IBOutlets
     
     @IBOutlet weak var tripsTableView: UITableView!
@@ -17,12 +19,18 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tripsTableView.dataSource = self
-        tripsTableView.delegate = self
+        configuraTableView()
         view.backgroundColor = UIColor(red: 30.0/255.0, green: 59/255.0, blue: 119/255.0, alpha: 1)
     }
     
+    func configuraTableView(){
+        tripsTableView.register(UINib(nibName: viagemTableViewCell, bundle: nil), forCellReuseIdentifier: viagemTableViewCell)
+        tripsTableView.dataSource = self
+        tripsTableView.delegate = self
+    }
 }
+
+
 
 //MARK: - Extensions
 
@@ -44,9 +52,13 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        cell.textLabel?.text = "viagem \(indexPath.row)"
-        return cell
+        guard let cellViagem = tableView.dequeueReusableCell(withIdentifier: viagemTableViewCell) as? ViagemTableViewCell else {fatalError("problema na criacao da celula")}
+        
+        return cellViagem
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400
     }
 }
 

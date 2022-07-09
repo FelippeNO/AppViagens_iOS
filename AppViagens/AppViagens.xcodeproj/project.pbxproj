@@ -103,10 +103,10 @@
 		2476080E28788E0A002FC46A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				242EE6702879AA4600813D56 /* Celulas */,
-				2476080F28788E2C002FC46A /* Header */,
 				24719F3128771BC500AA24D1 /* ViewController.swift */,
 				24719F3328771BC500AA24D1 /* Main.storyboard */,
+				242EE6702879AA4600813D56 /* Celulas */,
+				2476080F28788E2C002FC46A /* Header */,
 			);
 			path = Views;
 			sourceTree = "<group>";
