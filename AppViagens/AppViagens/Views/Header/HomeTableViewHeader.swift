@@ -17,7 +17,7 @@ class HomeTableViewHeader: UIView {
         bannerView.layer.cornerRadius = 10
         bannerView.layer.masksToBounds = true
         
-        blueHeadContainer.layer.cornerRadius = 500
+        blueHeadContainer.layer.cornerRadius = UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 500 : 200
         blueHeadContainer.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
     

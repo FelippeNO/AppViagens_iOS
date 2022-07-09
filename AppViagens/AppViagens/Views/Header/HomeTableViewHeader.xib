@@ -38,22 +38,32 @@
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aproveite o verão, com:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ep1-li-LiC">
                                     <rect key="frame" x="16" y="13.999999999999996" width="143" height="61.666666666666657"/>
                                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="22"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="27"/>
+                                    </variation>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ofertas exclusivas, somente no nosso app." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roP-r4-Stg">
-                                    <rect key="frame" x="16" y="102.33333333333334" width="143" height="36.666666666666657"/>
+                                    <rect key="frame" x="16" y="97.333333333333343" width="143" height="36.666666666666657"/>
                                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="13"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
+                                    <variation key="heightClass=regular-widthClass=regular">
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="17"/>
+                                    </variation>
                                 </label>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemMintColor"/>
                             <constraints>
-                                <constraint firstAttribute="bottom" secondItem="roP-r4-Stg" secondAttribute="bottom" constant="12.999999999999432" id="1QZ-lp-mVk"/>
+                                <constraint firstAttribute="bottom" secondItem="roP-r4-Stg" secondAttribute="bottom" constant="18" id="1QZ-lp-mVk">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="30"/>
+                                </constraint>
                                 <constraint firstAttribute="trailing" secondItem="roP-r4-Stg" secondAttribute="trailing" constant="16" id="RBl-nY-lLx"/>
                                 <constraint firstItem="roP-r4-Stg" firstAttribute="leading" secondItem="u7c-f6-hEp" secondAttribute="leading" constant="16" id="YMA-be-An0"/>
-                                <constraint firstItem="Ep1-li-LiC" firstAttribute="top" secondItem="u7c-f6-hEp" secondAttribute="top" constant="14" id="cPE-cp-cDN"/>
+                                <constraint firstItem="Ep1-li-LiC" firstAttribute="top" secondItem="u7c-f6-hEp" secondAttribute="top" constant="14" id="cPE-cp-cDN">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                </constraint>
                                 <constraint firstItem="Ep1-li-LiC" firstAttribute="leading" secondItem="u7c-f6-hEp" secondAttribute="leading" constant="16" id="fMk-O6-BBp"/>
                                 <constraint firstAttribute="trailing" secondItem="Ep1-li-LiC" secondAttribute="trailing" constant="16" id="faj-Pr-Y5w"/>
                             </constraints>
@@ -76,6 +86,9 @@
                     <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="21"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
+                    <variation key="heightClass=regular-widthClass=regular">
+                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Semibold" family="Kohinoor Devanagari" pointSize="34"/>
+                    </variation>
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
