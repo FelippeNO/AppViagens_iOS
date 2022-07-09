@@ -19,10 +19,11 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4cc-6s-hju" userLabel="BlueHeadContainer">
-                    <rect key="frame" x="0.0" y="95.666666666666686" width="390" height="240"/>
-                    <color key="backgroundColor" red="0.1176470588" green="0.23137254900000001" blue="0.46666666670000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <rect key="frame" x="-305" y="95.666666666666657" width="1000" height="270"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="240" id="kDk-qf-Dsq"/>
+                        <constraint firstAttribute="width" constant="1000" id="5k6-9p-Bel"/>
+                        <constraint firstAttribute="height" constant="270" id="kDk-qf-Dsq"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFE-Sl-Hu8" userLabel="RedContainer">
@@ -86,13 +87,12 @@
                 <constraint firstAttribute="bottom" secondItem="8GA-S0-TIg" secondAttribute="bottom" constant="-46" id="7Ga-jr-GAJ"/>
                 <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="WFE-Sl-Hu8" secondAttribute="bottom" constant="-60" id="AXg-90-E2F"/>
                 <constraint firstItem="8GA-S0-TIg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FFu-Sv-Rjj"/>
-                <constraint firstItem="4cc-6s-hju" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IXH-UC-A7a"/>
-                <constraint firstItem="4cc-6s-hju" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Lln-qJ-k4M"/>
                 <constraint firstItem="dh6-U3-DQB" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="PFk-qM-q1g"/>
                 <constraint firstItem="4cc-6s-hju" firstAttribute="top" secondItem="dh6-U3-DQB" secondAttribute="bottom" constant="12" id="WNR-A7-bPI"/>
-                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="4cc-6s-hju" secondAttribute="bottom" constant="-49.999999999999943" id="crk-sn-GLi"/>
+                <constraint firstItem="4cc-6s-hju" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XQH-JY-XEP"/>
+                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="4cc-6s-hju" secondAttribute="bottom" constant="-79.999999999999943" id="crk-sn-GLi"/>
                 <constraint firstItem="dh6-U3-DQB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="g9u-ob-qgB"/>
-                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="4cc-6s-hju" secondAttribute="bottom" constant="-49.999999999999943" id="vZI-Bn-4pL"/>
+                <constraint firstItem="8GA-S0-TIg" firstAttribute="top" secondItem="4cc-6s-hju" secondAttribute="bottom" constant="-79.999999999999943" id="vZI-Bn-4pL"/>
                 <constraint firstItem="WFE-Sl-Hu8" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="yrC-ba-REp"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
@@ -114,6 +114,9 @@
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
