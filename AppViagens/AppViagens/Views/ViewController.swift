@@ -48,17 +48,27 @@ extension ViewController: UITableViewDelegate{
 
 extension ViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return sessaoDeViagens?[section].numeroDeLinhas ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cellViagem = tableView.dequeueReusableCell(withIdentifier: viagemTableViewCell) as? ViagemTableViewCell else {fatalError("problema na criacao da celula")}
         
-        return cellViagem
+        let viewModel = sessaoDeViagens?[indexPath.section]
+        
+        switch viewModel?.tipo {
+        case .destaques:
+            cellViagem.configuraCelula(viewModel?.viagens[indexPath.row])
+            return cellViagem
+        default:
+            return UITableViewCell()
+        }
+        
+ 
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400
+        return 400;
     }
 }
 
