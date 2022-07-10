@@ -13,8 +13,8 @@ func load(_ filename: String) -> [ViagemViewModel]? {
     let data: Data
     
     guard let file = Bundle.main.url(forResource: filename, withExtension: nil)
-        else {
-            fatalError("Couldn't find \(filename) in main bundle.")
+    else {
+        fatalError("Couldn't find \(filename) in main bundle.")
     }
     
     do {
@@ -45,6 +45,11 @@ func load(_ filename: String) -> [ViagemViewModel]? {
                 if let destaques = tiposDeViagens?.destaques {
                     let destaqueViewModel = ViagemDestaqueViewModel(destaques)
                     listaViagemViewModel.insert(destaqueViewModel, at: 0)
+                }
+            case .ofertas:
+                if let ofertas = tiposDeViagens?.ofertas {
+                    let ofertaViewModel = ViagemOfertaViewModel(ofertas)
+                    listaViagemViewModel.append(ofertaViewModel)
                 }
             default:
                 break

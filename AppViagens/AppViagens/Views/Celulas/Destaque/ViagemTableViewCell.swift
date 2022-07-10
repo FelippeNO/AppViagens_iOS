@@ -8,7 +8,7 @@
 import UIKit
 
 class ViagemTableViewCell: UITableViewCell {
-
+    
     // MARK: - IBOutlets
     @IBOutlet weak var backgroundViewCell: UIView!
     @IBOutlet weak var viagemImage: UIImageView!
