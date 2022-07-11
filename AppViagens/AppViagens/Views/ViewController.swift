@@ -66,7 +66,6 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return sessaoDeViagens?[section].numeroDeLinhas ?? 0
     }
     
@@ -81,6 +80,7 @@ extension ViewController: UITableViewDataSource{
             return cellViagem
         case .ofertas:
             guard let cellOferta = tableView.dequeueReusableCell(withIdentifier: ofertaTableViewCell) as? OfertaTableViewCell else {fatalError("problema na criacao da celula")}
+            cellOferta.configuraCelula(viewModel?.viagens)
             return cellOferta
         default:
             return UITableViewCell()
@@ -88,7 +88,6 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        
         return 450;
     }
 }
