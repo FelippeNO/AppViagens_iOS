@@ -21,7 +21,7 @@ struct Viagem: Codable {
     static func jsonToData(_ json:[String: Any]) -> Data? {
         return try? JSONSerialization.data(withJSONObject: json, options: [])
     }
-
+    
     static func decodeJson(_ jsonData: Data) -> Viagem? {
         do {
             return try JSONDecoder().decode(Viagem.self, from: jsonData)

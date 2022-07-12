@@ -87,7 +87,10 @@ extension ViewController: UITableViewDataSource{
             return cellViagem
         case .ofertas:
             guard let cellOferta = tableView.dequeueReusableCell(withIdentifier: ofertaTableViewCell) as? OfertaTableViewCell else {fatalError("problema na criacao da celula")}
+            
+            cellOferta.delegate = self
             cellOferta.configuraCelula(viewModel?.viagens)
+            
             return cellOferta
         default:
             return UITableViewCell()
@@ -108,6 +111,12 @@ extension ViewController: UITableViewDataSource{
         default: break
             
         }
+    }
+}
+
+extension ViewController: OfertaTableViewCellDelegate {
+    func didSelectView(_ viagem: Viagem?) {
+        irParaDetalhes(viagem)
     }
 }
 

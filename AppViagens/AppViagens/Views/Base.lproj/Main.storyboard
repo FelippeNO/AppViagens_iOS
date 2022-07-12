@@ -407,6 +407,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="diariaViagemLabel" destination="7pe-Es-wGI" id="Hjr-S5-JxF"/>
+                        <outlet property="precoSemDescontoLabel" destination="hWD-W1-oh0" id="hrU-pC-783"/>
+                        <outlet property="precoViagemLabel" destination="T3X-20-9x0" id="6jK-cm-6it"/>
                         <outlet property="subtituloViagemLabel" destination="xQ3-ZK-20v" id="xra-8u-Qch"/>
                         <outlet property="tituloViagemLabel" destination="Peh-FT-PpH" id="Ed7-wR-Uvr"/>
                         <outlet property="viagemImageView" destination="P8T-aU-mJ8" id="3eg-u3-1eD"/>

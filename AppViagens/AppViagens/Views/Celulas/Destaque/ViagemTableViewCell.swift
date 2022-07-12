@@ -40,5 +40,4 @@ class ViagemTableViewCell: UITableViewCell {
             self.backgroundViewCell.addSombra()
         }
     }
-    
 }

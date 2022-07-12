@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeTableViewHeader: UIView {
-
+    
     @IBOutlet weak var bannerView: UIView!
     @IBOutlet weak var bottomWhiteMarkView: UIView!
     @IBOutlet weak var blueHeadContainer: UIView!
@@ -20,6 +20,4 @@ class HomeTableViewHeader: UIView {
         blueHeadContainer.layer.cornerRadius = UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 500 : 200
         blueHeadContainer.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     }
-    
-   
 }
