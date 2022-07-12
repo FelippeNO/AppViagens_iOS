@@ -32,6 +32,13 @@ class ViewController: UIViewController {
         tripsTableView.dataSource = self
         tripsTableView.delegate = self
     }
+    
+    func irParaDetalhes(_ viagem: Viagem?){
+        guard let viagemSelecionada = viagem else {return}
+        guard let detalheController = DetalheViewController.instanciar(viagemSelecionada) else {return}
+        navigationController?.pushViewController(detalheController, animated: true)
+    }
+    
 }
 
 
@@ -92,9 +99,15 @@ extension ViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detalheController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetalheViewController")
+        let viewModel = sessaoDeViagens?[indexPath.section]
         
-        navigationController?.pushViewController(detalheController, animated: true)
+        switch viewModel?.tipo{
+        case .destaques, .internacionais:
+            let viagemSelecionada = viewModel?.viagens[indexPath.row]
+            irParaDetalhes(viagemSelecionada)
+        default: break
+            
+        }
     }
 }
 

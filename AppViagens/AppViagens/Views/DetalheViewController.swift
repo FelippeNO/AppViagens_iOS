@@ -15,10 +15,12 @@ class DetalheViewController: UIViewController {
     @IBOutlet weak var tituloViagemLabel: UILabel!
     @IBOutlet weak var subtituloViagemLabel: UILabel!
     
+    //MARK: - Atributos
+    var viagem: Viagem?
+    
     //MARK: - View LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     //MARK: - IBActions
@@ -26,6 +28,12 @@ class DetalheViewController: UIViewController {
     @IBAction func didTapBackButton(_ sender: UIButton) {
         
         navigationController?.popViewController(animated: true)
+    }
+    
+    class func instanciar(_ viagem: Viagem) -> DetalheViewController?{
+        let detalhesViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DetalheViewController") as? DetalheViewController
+        detalhesViewController?.viagem = viagem
+        return detalhesViewController
     }
     
 }
